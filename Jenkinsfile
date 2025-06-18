@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/vish-tester/EmployeeApp.git' // or use local folder
+                git branch: 'main', url: 'https://github.com/vish-tester/EmployeeApp.git'  // or use local folder
             }
         }
 
